@@ -51,7 +51,7 @@ def login_redirect(school: str = None):
     encoded_service = quote_plus(service_with_school)
 
     # URL login CAS (on passe service encodé)
-    cas_login = f"{CAS_BASE}/login?service={encoded_service}"
+    cas_login = f"{CAS_BASE}login?service={encoded_service}"
 
     return RedirectResponse(cas_login)
 
