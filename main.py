@@ -13,9 +13,9 @@ import jwt  # PyJWT
 # ---------- CONFIG (préférer les vars d'environnement en prod) ----------
 CAS_BASE = os.getenv("CAS_BASE", "https://cas.ent.auvergnerhonealpes.fr")
 # URL publique de ton backend callback : ex: https://studiix-backend.onrender.com/auth/callback
-SERVICE_URL = os.getenv("SERVICE_URL", "https://studiix-backend.example.com/auth/callback")
+SERVICE_URL = os.getenv("SERVICE_URL", "https://studiix-backend.onrender.com/auth/callback")
 # URL frontend (où on redirige ensuite) : ex: https://studiix-frontend.example.com
-FRONTEND_BASE = os.getenv("FRONTEND_BASE", "https://studiix-frontend.example.com")
+FRONTEND_BASE = os.getenv("FRONTEND_BASE", "https://vitejsviteljgeg4yb-0gav--5173--96435430.local-credentialless.webcontainer.io")
 JWT_SECRET = os.getenv("JWT_SECRET", "change_this_secret_in_prod")
 JWT_ALG = "HS256"
 JWT_EXPIRE_MINUTES = int(os.getenv("JWT_EXPIRE_MINUTES", "60"))
