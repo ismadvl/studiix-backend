@@ -1,3 +1,5 @@
 fastapi
 uvicorn
-pronotepy
+requests
+pyjwt
+# pronotepy  # décommenter si tu veux essayer l'intégration Pronote côté backend plus tard
